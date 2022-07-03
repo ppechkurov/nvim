@@ -68,4 +68,12 @@ nvim_tree.setup {
     number = false,
     relativenumber = false,
   },
+  renderer = {
+    icons = {
+      glyphs = {
+        git = {
+        }
+      }
+    }
+  }
 }
