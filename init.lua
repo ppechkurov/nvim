@@ -7,6 +7,7 @@ require 'user.lsp'
 require 'user.telescope'
 require 'user.treesitter'
 require 'user.staline'
+require 'user.autopairs'
 require('stabline').setup {
 	bg = "#303030",
 	fg = "white",
