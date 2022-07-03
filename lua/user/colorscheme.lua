@@ -1,6 +1,7 @@
-local colorscheme = "zephyrium"
+local colorscheme = "tokyonight"
 
---vim.g.tokyonight_style = "night"
+vim.g.tokyonight_style = "night"
+
 --vim.g.gruvbox_material_background = "medium"
 --vim.g.gruvbox_material_better_performance = 1
 --vim.g.gruvbox_material_enable_bold = 1
