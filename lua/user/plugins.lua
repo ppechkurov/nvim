@@ -87,6 +87,7 @@ return packer.startup(function(use)
   use("p00f/nvim-ts-rainbow")
 
   -- Status line
+  use("nvim-lualine/lualine.nvim")
 
   -- Buffers
   use("akinsho/bufferline.nvim")
