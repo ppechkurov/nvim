@@ -48,6 +48,7 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs"
   use "numToStr/Comment.nvim"
   use 'JoosepAlviste/nvim-ts-context-commentstring'
+  use "kyazdani42/nvim-tree.lua"
 
   -- Colorschemes
   use "folke/tokyonight.nvim"

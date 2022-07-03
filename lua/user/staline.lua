@@ -39,4 +39,4 @@ require('staline').setup {
     Hint = "",
   },
 }
-vim.opt.laststatus=3
+vim.opt.laststatus=2
