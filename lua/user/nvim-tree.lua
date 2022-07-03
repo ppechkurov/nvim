@@ -12,19 +12,23 @@ end
 
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
-nvim_tree.setup {
-  auto_reload_on_write = true,
+nvim_tree.setup({
+  open_on_setup = false,
+  ignore_buffer_on_setup = true,
+  open_on_setup_file = false,
+  auto_reload_on_write = false,
   actions = {
     open_file = {
-      quit_on_open = true
-    }
+      quit_on_open = true,
+      resize_window = true,
+    },
   },
   disable_netrw = true,
   hijack_netrw = true,
   ignore_ft_on_setup = {
+    "alpha",
     "startify",
     "dashboard",
-    "alpha",
   },
   open_on_tab = false,
   hijack_cursor = false,
@@ -60,9 +64,9 @@ nvim_tree.setup {
     mappings = {
       custom_only = false,
       list = {
-        { key = { "l", "<CR>", "o" }, cb = tree_cb "edit" },
-        { key = "h", cb = tree_cb "close_node" },
-        { key = "v", cb = tree_cb "vsplit" },
+        { key = { "l", "<CR>", "o" }, cb = tree_cb("edit") },
+        { key = "h", cb = tree_cb("close_node") },
+        { key = "v", cb = tree_cb("vsplit") },
       },
     },
     number = false,
@@ -71,9 +75,8 @@ nvim_tree.setup {
   renderer = {
     icons = {
       glyphs = {
-        git = {
-        }
-      }
-    }
-  }
-}
+        git = {},
+      },
+    },
+  },
+})

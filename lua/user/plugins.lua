@@ -49,6 +49,7 @@ return packer.startup(function(use)
   use("numToStr/Comment.nvim")
   use("JoosepAlviste/nvim-ts-context-commentstring")
   use("kyazdani42/nvim-tree.lua")
+  use("antoinemadec/FixCursorHold.nvim") -- This is needed to fix lsp doc highlight
 
   -- Colorschemes
   use("folke/tokyonight.nvim")
@@ -98,6 +99,9 @@ return packer.startup(function(use)
 
   -- Toggle terminal
   use("akinsho/toggleterm.nvim")
+
+  -- Alpha
+  use("goolord/alpha-nvim")
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
