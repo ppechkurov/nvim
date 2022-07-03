@@ -11,4 +11,3 @@ require('stabline').setup {
 	bg = "#303030",
 	fg = "white",
 }
---require 'user.lualine'

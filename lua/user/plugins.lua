@@ -50,6 +50,8 @@ return packer.startup(function(use)
   use "folke/tokyonight.nvim"
   use "lunarvim/colorschemes"
   use "sainnhe/gruvbox-material"
+  use "luisiacc/gruvbox-baby"
+  use 'titanzero/zephyrium'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin

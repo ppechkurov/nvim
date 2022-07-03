@@ -1,10 +1,10 @@
-local colorscheme = "gruvbox-material"
+local colorscheme = "zephyrium"
 
 --vim.g.tokyonight_style = "night"
-vim.g.gruvbox_material_background = "medium"
-vim.g.gruvbox_material_better_performance = 1
-vim.g.gruvbox_material_enable_bold = 1
-vim.g.gruvbox_material_show_eob = 0
+--vim.g.gruvbox_material_background = "medium"
+--vim.g.gruvbox_material_better_performance = 1
+--vim.g.gruvbox_material_enable_bold = 1
+--vim.g.gruvbox_material_show_eob = 0
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 
