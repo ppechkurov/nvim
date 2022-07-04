@@ -108,15 +108,8 @@ return packer.startup(function(use)
   use("ggandor/lightspeed.nvim")
 
   -- Sessions
-  use({
-    "rmagatti/auto-session",
-    config = function()
-      require("auto-session").setup({
-        log_level = "info",
-        auto_session_suppress_dirs = { "~/", "~/Projects" },
-      })
-    end,
-  })
+  use("olimorris/persisted.nvim")
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
