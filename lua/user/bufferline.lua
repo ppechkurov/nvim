@@ -74,12 +74,12 @@ bufferline.setup {
   },
   highlights = {
     fill = {
-      guifg = { attribute = "fg", highlight = "#ff0000" },
-      guibg = { attribute = "bg", highlight = "TabLine" },
+      guifg = { attribute = "fg", highlight = "#7CFC00" },
+      guibg = { attribute = "bg", highlight = "#7CFC00" },
     },
     background = {
-      guifg = { attribute = "fg", highlight = "TabLine" },
-      guibg = { attribute = "bg", highlight = "TabLine" },
+      guifg = { attribute = "fg", highlight = "#7CFC00" },
+      guibg = { attribute = "bg", highlight = "#7CFC00" },
     },
 
     -- buffer_selected = {

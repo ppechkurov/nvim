@@ -91,8 +91,12 @@ return packer.startup(function(use)
   -- Status line
   use("nvim-lualine/lualine.nvim")
 
-  -- Buffers
-  use("akinsho/bufferline.nvim")
+  -- Buffers-- using packer.nvim
+  -- use({ "akinsho/bufferline.nvim", tag = "v2.*", requires = "kyazdani42/nvim-web-devicons" })
+  use({
+    "noib3/nvim-cokeline",
+    requires = "kyazdani42/nvim-web-devicons", -- If you want devicons
+  })
   use("moll/vim-bbye")
 
   -- Git
@@ -110,6 +114,9 @@ return packer.startup(function(use)
   -- Sessions
   use("olimorris/persisted.nvim")
 
+  -- Scrollbar
+  use("petertriho/nvim-scrollbar")
+  require("scrollbar").setup()
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
