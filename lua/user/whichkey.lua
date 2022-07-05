@@ -86,7 +86,9 @@ local mappings = {
 
   c = {
     name = "Close Buffers",
-    t = { "<cmd>:Bdelete this<CR>", "This" },
+    a = { "<cmd>:Bdelete all<CR>", "All" },
+    c = { "<cmd>:Bdelete this<CR>", "Current" },
+    m = { "<cmd>:Bdelete menu<CR>", "Menu" },
     o = { "<cmd>:Bdelete other<CR>", "Other" },
   },
 
