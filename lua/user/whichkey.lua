@@ -81,9 +81,14 @@ local opts = {
 local mappings = {
   ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
-  ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
   ["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
+
+  c = {
+    name = "Close Buffers",
+    t = { "<cmd>:Bdelete this<CR>", "This" },
+    o = { "<cmd>:Bdelete other<CR>", "Other" },
+  },
 
   p = {
     name = "Packer",
