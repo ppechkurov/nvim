@@ -92,12 +92,17 @@ return packer.startup(function(use)
   use("nvim-lualine/lualine.nvim")
 
   -- Buffers-- using packer.nvim
-  -- use({ "akinsho/bufferline.nvim", tag = "v2.*", requires = "kyazdani42/nvim-web-devicons" })
   use({
-    "noib3/nvim-cokeline",
-    requires = "kyazdani42/nvim-web-devicons", -- If you want devicons
+    "romgrk/barbar.nvim",
+    requires = { "kyazdani42/nvim-web-devicons" },
   })
-  use("moll/vim-bbye")
+  -- use({ "akinsho/bufferline.nvim", tag = "v2.*", requires = "kyazdani42/nvim-web-devicons" })
+  -- use({
+  --   "noib3/nvim-cokeline",
+  --   requires = "kyazdani42/nvim-web-devicons", -- If you want devicons
+  -- })
+  use("Asheq/close-buffers.vim")
+  -- use("moll/vim-bbye")
 
   -- Git
   use("lewis6991/gitsigns.nvim")
