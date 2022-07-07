@@ -82,6 +82,7 @@ local mappings = {
   ["a"] = { "<cmd>Alpha<cr>", "Alpha" },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
+  ["w"] = { "<cmd>w<cr>", "Write file" },
   ["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
 
   c = {
@@ -168,7 +169,7 @@ local mappings = {
     M = { "<cmd>Telescope man_pages<cr>", "Man Pages" },
     R = { "<cmd>Telescope registers<cr>", "registers" },
     r = { "<cmd>Telescope oldfiles<cr>", "recent file" },
-    w = { "<cmd>Telescope live_grep theme=ivy<cr>", "word" },
+    w = { "<cmd>Telescope live_grep<cr>", "word" },
   },
 
   t = {
