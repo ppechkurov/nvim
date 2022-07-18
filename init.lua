@@ -18,5 +18,6 @@ require("user.telescope")
 require("user.toggleterm")
 require("user.treesitter")
 require("user.whichkey")
+require("user.tabnine")
 
 require("user.neovide")

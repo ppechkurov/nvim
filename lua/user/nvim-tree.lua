@@ -16,7 +16,7 @@ nvim_tree.setup({
   open_on_setup = false,
   ignore_buffer_on_setup = true,
   open_on_setup_file = false,
-  auto_reload_on_write = false,
+  auto_reload_on_write = true,
   actions = {
     open_file = {
       quit_on_open = true,

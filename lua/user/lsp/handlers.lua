@@ -83,15 +83,15 @@ local function lsp_keymaps(bufnr)
   )
   vim.api.nvim_buf_set_keymap(bufnr, "n", "]d", '<cmd>lua vim.diagnostic.goto_next({ border = "rounded" })<CR>', opts)
   vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>q", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
-  vim.cmd([[ command! Format execute 'lua vim.lsp.buf.format { async = true }' ]])
+  vim.cmd([[ command! Format execute 'lua vim.lsp.buf.formatting()' ]])
 end
 
 M.on_attach = function(client, bufnr)
   if client.name == "tsserver" then
-    client.server_capabilities.document_formatting = false
+    client.resolved_capabilities.document_formatting = false --server_capabilities.document_formatting = false
   end
   if client.name == "sumneko_lua" then
-    client.server_capabilities.document_formatting = false
+    client.resolved_capabilities.document_formatting = false --server_capabilities.document_formatting = false
   end
   -- occurences highlighting
   client.server_capabilities.document_highlight = true
