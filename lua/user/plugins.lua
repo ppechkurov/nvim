@@ -130,7 +130,7 @@ return packer.startup(function(use)
 
 	-- Lsp saga - better lsp
 	use({
-		"glepnir/lspsaga.nvim",
+		"kkharji/lspsaga.nvim",
 		branch = "main",
 		config = function()
 			local saga = require("lspsaga")
