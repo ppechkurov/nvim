@@ -52,6 +52,8 @@ return packer.startup(function(use)
 	use("antoinemadec/FixCursorHold.nvim") -- This is needed to fix lsp doc highlight
 	use("folke/which-key.nvim")
 
+  -- Git blame
+  use("f-person/git-blame.nvim")
 	-- Colorschemes
 	use("folke/tokyonight.nvim")
 	-- use("lunarvim/colorschemes")
