@@ -24,6 +24,7 @@ keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
+keymap("n", "<esc>", ":noh<cr>", opts)
 
 -- NvimTree navigation
 keymap("n", "<leader>o", ":NvimTreeFindFileToggle<cr>", opts)
